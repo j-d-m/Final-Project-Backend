@@ -4,11 +4,12 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "build": "npm run build",
     "start": "node server",
     "dev": "nodemon server"
   },
   "keywords": [],
-  "author": "Anass knene",
+  "author": "Joshua Moir and Anass Knene",
   "license": "ISC",
   "dependencies": {
     "@hapi/joi": "^17.1.1",
