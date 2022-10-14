@@ -32,9 +32,9 @@ const server = new ApolloServer({
 });
 app.use(graphqlUploadExpress());
 
-app.use(express.static(__dirname + "build"));
+app.use(express.static(__dirname + "/build"));
 app.get("/", function (req, res) {
-  res.sendFile(__dirname + "build/index.html");
+  res.sendFile(__dirname + "/build/index.html");
 });
 //serving image from databse
 app.get("/db/images/:filename", async (req, res) => {
@@ -56,5 +56,5 @@ server.start().then(() => {
   );
 });
 //** !* TODO static image server **
-//**  deploy backend - changing localhost 5000 to deployed url
+
 //* check the build root for /*/
