@@ -1,10 +1,11 @@
 {
   "name": "backend",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
   "main": "server.js",
   "scripts": {
-    "build": "npm run build",
+    "vercel": "dev",
+    "build": "node build",
     "start": "node server",
     "dev": "nodemon server"
   },
