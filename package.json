@@ -4,7 +4,6 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "vercel": "dev",
     "build": "node build",
     "start": "node server",
     "dev": "nodemon server"
