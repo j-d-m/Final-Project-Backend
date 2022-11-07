@@ -12,7 +12,7 @@ const handleFileUploadMongoDB = async (file) => {
       }
       const Image = new ImagesCollection({
         filename: `${key}_${filename}`,
-        imageUrl: `https://localhost:5000/graphql/${key}_${filename}`,
+        imageUrl: `https://staff-room.cyclic.app/db/images${key}_${filename}`,
         data: Buffer.concat(chunks),
       });
       await Image.save();

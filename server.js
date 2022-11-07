@@ -36,6 +36,7 @@ app.use(graphqlUploadExpress());
 // app.get("/", function (req, res) {
 //   res.sendFile(__dirname + "/build/index.html");
 // });
+
 //serving image from databse
 app.get("/db/images/:filename", async (req, res) => {
   const image = await ImagesCollection.findOne({
@@ -56,5 +57,3 @@ server.start().then(() => {
   );
 });
 //** !* TODO static image server **
-
-//* check the build root for /*/
