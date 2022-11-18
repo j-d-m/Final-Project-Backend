@@ -65,6 +65,7 @@ const addUser = async (_, args) => {
   }
 };
 const updateUser = async (_, args, { req }) => {
+  console.log(args);
   const token = req.headers["token"];
   if (token) {
     const decode = jwt.verify(token, "secret-key");
