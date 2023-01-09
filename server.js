@@ -22,6 +22,7 @@ const { DB_USER, DB_PASS, DB_HOST, DB_NAME, PORT } = process.env;
 //   .connect(mongoURL)
 //   .then(() => console.log("successfully connect to the database Atlas"))
 //   .catch((err) => console.log(`error connecting to the database Atlas ${err}`));
+
 const mongoURL = `mongodb+srv://${DB_USER}:${DB_PASS}@${DB_HOST}/${DB_NAME}?retryWrites=true&w=majority`;
 
 const connectDB = async () => {
@@ -69,6 +70,6 @@ connectDB().then(() => {
   });
 });
 
-//** !* TODO static image server **
+//**! TODO FIX Profile picture image upload **
 // 1. check on localhost for account creation data - build delete in backend comment lines 35-37 on the backend
 // 2. if not local then check build problems on cyclic
